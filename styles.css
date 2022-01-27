@@ -91,3 +91,23 @@ button {
     color: #595959;
     font-size: 1.2rem;
 }
+
+
+.feature-detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+}
+.feature-detail-text {
+    width: 60%;
+    margin: auto;
+    font-size: 1.5em;
+}
+.feature-detail-text > h2 {
+    margin-bottom: 0;
+}
+.feature-detail-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
