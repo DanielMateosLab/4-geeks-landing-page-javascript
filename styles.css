@@ -84,8 +84,8 @@ button {
     font-size: 6rem;
     color: var(--app-blue);
 }
-.heature > h2 {
-    font-size: 3rem;
+.feature > h2 {
+    font-size: 1.75rem;
 }
 .feature > p {
     color: #595959;
