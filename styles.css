@@ -2,6 +2,7 @@
 :root {
   --app-blue: rgb(0, 111, 185);
   --app-light: rgb(238, 240, 241);
+  --app-secondary: #595959;
 }
 
 body {
@@ -34,7 +35,7 @@ button {
   font-size: 1.75rem;
 }
 .card > p {
-  color: #595959;
+  color: var(--app-secondary);
   font-size: 1.2rem;
 }
 .card > img {
@@ -65,7 +66,7 @@ header {
 }
 
 /* First page */
-.first-page {
+.signup-form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -75,7 +76,7 @@ header {
     url("/img/bg-masthead.jpg");
   background-size: cover;
 }
-.first-page-title {
+.signup-title {
   font-size: 2.5rem;
   color: white;
   padding: 0 2rem;
@@ -143,3 +144,42 @@ header {
 /* Cards used are in globals section */
 
 /* Last page - Form and footer */
+.last-page > .signup-form {
+  min-height: 70vh;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+
+  height: 30vh;
+  padding: 0 2rem;
+  background: var(--app-light);
+}
+.footer-left {
+  flex-grow: 1;
+}
+.dot {
+  margin: 0 1rem 0.125rem;
+  height: 4px;
+  width: 4px;
+  background-color: var(--app-blue);
+  border-radius: 50%;
+  display: inline-block;
+}
+footer a {
+  text-decoration: none;
+  color: var(--app-blue);
+}
+.rigths {
+  margin-top: 1rem;
+  color: var(--app-secondary);
+  font-size: 0.9rem;
+}
+
+.social-link {
+  font-size: 2rem;
+}
+.social-link:not(:last-child) {
+  margin-right: 1rem;
+}
