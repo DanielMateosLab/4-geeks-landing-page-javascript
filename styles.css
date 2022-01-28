@@ -26,6 +26,7 @@ header {
 button {
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 
   color: white;
   font-weight: 800;
