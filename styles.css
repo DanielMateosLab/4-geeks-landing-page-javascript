@@ -1,3 +1,4 @@
+/* Global & reused styles */
 :root {
   --app-blue: rgb(0, 111, 185);
   --app-light: rgb(238, 240, 241);
@@ -9,6 +10,41 @@ body {
   margin: 0;
 }
 
+button {
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  color: white;
+  font-weight: 800;
+  padding: 0.5rem 2rem;
+
+  background: var(--app-blue);
+}
+
+.card {
+  text-align: center;
+  width: 25vw;
+}
+.card > .bi {
+  font-size: 6rem;
+  color: var(--app-blue);
+}
+.card > h2 {
+  font-size: 1.75rem;
+}
+.card > p {
+  color: #595959;
+  font-size: 1.2rem;
+}
+.card > img {
+  object-fit: cover;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+}
+
+/* Header / Navbar */
 header {
   position: fixed;
   width: 100%;
@@ -23,22 +59,12 @@ header {
 .navbar > span {
   font-size: 1.25rem;
 }
-button {
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-
-  color: white;
-  font-weight: 800;
-  padding: 0.5rem 2rem;
-
-  background: var(--app-blue);
-}
 
 .page {
   min-height: 100vh;
 }
 
+/* First page */
 .first-page {
   display: flex;
   flex-direction: column;
@@ -71,34 +97,16 @@ button {
   left: -1.6rem;
 }
 
+/* Second page - Features summary */
 .features-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   background: var(--app-light);
 }
-.card {
-  text-align: center;
-  width: 25vw;
-}
-.card > .bi {
-  font-size: 6rem;
-  color: var(--app-blue);
-}
-.card > h2 {
-  font-size: 1.75rem;
-}
-.card > p {
-  color: #595959;
-  font-size: 1.2rem;
-}
-.card > img {
-  object-fit: cover;
-  width: 20vw;
-  height: 20vw;
-  border-radius: 50%;
-}
+/* Cards used are in the globals section */
 
+/* Third to fifth page - Features in detail */
 .feature-detail {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -118,6 +126,7 @@ button {
   height: 100%;
 }
 
+/* Sixth page - Reviews */
 .reviews {
   background: var(--app-light);
   text-align: center;
@@ -125,10 +134,12 @@ button {
   flex-direction: column;
   justify-content: center;
 }
-
 .reviews-container {
   display: flex;
   justify-content: space-evenly;
 
   margin-top: 3em;
 }
+/* Cards used are in globals section */
+
+/* Last page - Form and footer */
