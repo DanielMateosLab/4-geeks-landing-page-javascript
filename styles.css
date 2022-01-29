@@ -26,17 +26,14 @@ button {
 .card {
   text-align: center;
   width: 25vw;
+  font-size: 1.2em;
 }
 .card > .bi {
   font-size: 6rem;
   color: var(--app-blue);
 }
-.card > h2 {
-  font-size: 1.75em;
-}
 .card > p {
   color: var(--app-secondary);
-  font-size: 1.2em;
 }
 .card > img {
   object-fit: cover;
@@ -116,7 +113,8 @@ header {
   grid-template-rows: 100%;
 }
 .feature-detail-text {
-  width: 60%;
+  width: 65%;
+  padding: 2rem;
   margin: auto;
   font-size: 1.5em;
 }
@@ -178,7 +176,7 @@ footer a {
 .rigths {
   margin-top: 1rem;
   color: var(--app-secondary);
-  font-size: 0.9rem;
+  font-size: 0.9em;
 }
 
 .social-link {
@@ -190,9 +188,6 @@ footer a {
 
 /* Small devices */
 @media screen and (max-width: 768px) {
-  body {
-    font-size: 1.2rem;
-  }
   form {
     display: flex;
     flex-direction: column;
@@ -215,5 +210,32 @@ footer a {
     padding: 2rem;
   }
 
-  /* TODO: feature-detail */
+  .feature-detail {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+  }
+  .feature-detail-text {
+    width: initial;
+    order: 2;
+    font-size: 1.25em;
+  }
+  .feature-detail-text > h2 {
+    margin: 0;
+  }
+}
+
+.reviews > h2 {
+  font-size: 1.7em;
+  margin-top: 1.5em;
+}
+
+.reviews-container {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    font-size: 1.2rem;
+  }
 }
