@@ -176,7 +176,7 @@ footer a {
 .rigths {
   margin-top: 1rem;
   color: var(--app-secondary);
-  font-size: 0.9em;
+  font-size: 0.85em;
 }
 
 .social-link {
@@ -229,9 +229,20 @@ footer a {
   font-size: 1.7em;
   margin-top: 1.5em;
 }
-
 .reviews-container {
   margin-top: 0;
+}
+
+footer {
+  flex-direction: column-reverse;
+  justify-content: center;
+  row-gap: 1em;
+}
+.footer-left {
+  flex-grow: 0;
+}
+.social-link:not(:last-child) {
+  margin-right: 3rem;
 }
 
 @media screen and (max-width: 576px) {
