@@ -95,6 +95,15 @@ header {
   position: relative;
   right: 1.5rem;
 }
+.signedup-alert {
+  color: #0f3318;
+  background: #35dd5c;
+  padding: 0.5rem;
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: inset 0 1px 0 0 #3eff6b;
+  border: 1px solid #1e7c34;
+}
 
 /* Second page - Features summary */
 .features-container {
